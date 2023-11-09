@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <Meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="myFavIcon.png"> <!--Source: W3cSchools website -->
+        <script src="code.js"> 
+            
+        </script>
+    </head>
+    <body>
+        <!--This block will be used to place the images in a big size, so I will make them show up with a bit of JS-->
+        <div class="big" id="bigImg4" onclick="closing(4)">
+            <img class="grown" src="belly04.jpg" alt="Belly close up image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg5" onclick="closing(5)">
+            <img class="grown" src="belly05.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg6" onclick="closing(6)">
+            <img class="grown" src="belly06.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg8" onclick="closing(8)">
+            <img class="grown" src="belly08.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg7" onclick="closing(7)">
+            <img class="grown" src="belly07.jpg" alt="Belly close up image" width="900" height="644">
+        </div>
+        <!--Second row of pictures-->
+        <div class="big" id="bigImg9" onclick="closing(9)">
+            <img class="grown" src="belly09.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg10" onclick="closing(10)">
+            <img class="grown" src="belly10.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg11" onclick="closing(11)">
+            <img class="grown" src="belly11.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg12" onclick="closing(12)">
+            <img class="grown" src="belly12.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg13" onclick="closing(13)">
+            <img class="grown" src="belly13.jpg" alt="pregnant woman image" width="900" height="644">
+        </div>
+        <!--Third row of pictures-->
+        <div class="big" id="bigImg14" onclick="closing(14)">
+            <img class="grown" src="belly14.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg15" onclick="closing(15)">
+            <img class="grown" src="belly15.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg16" onclick="closing(16)">
+            <img class="grown" src="belly16.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg17" onclick="closing(17)">
+            <img class="grown" src="belly17.jpg" alt="pregnant woman image" width="501" height="700">
+        </div>
+        <div class="big" id="bigImg18" onclick="closing(18)">
+            <img class="grown" src="belly18.jpg" alt="pregnant woman image" width="900" height="644">
+        </div>
+
+        <div class="heading">
+            <p>AlexPhotography</p>
+            <nav>
+                <a href="index.html">Home</a> 
+                <a href="Portfolio.html">Portfolio</a> 
+                <a href="Hire.html">Hire me</a> 
+                <a href="about.html">About</a> 
+            </nav>
+        </div>
+
+        <!--This block below contains the img thumbnails. 
+        They contain an onclick statement to activate the function on my JS script as they are clicked-->
+        <main class="portfolioWrapper">
+            <h2>Renata Mariana</h2>
+            <div class="mainImagesWrapper">
+                <img src="belly04.jpg" alt="Belly close up image" width="215" height="300" onclick="viewBig(4)">
+                <img src="belly05.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(5)">
+                <img src="belly06.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(6)">
+                <img src="belly08.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(8)">
+                <img src="belly07.jpg" alt="Belly close up image" width="450" height="300" onclick="viewBig(7)">       
+            </div>
+
+            <h2>Aline Lima</h2>
+            <div class="mainImagesWrapper">
+                <img src="belly09.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(9)">
+                <img src="belly10.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(10)">
+                <img src="belly11.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(11)">
+                <img src="belly12.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(12)">
+                <img src="belly13.jpg" alt="pregnant woman image" width="450" height="300" onclick="viewBig(13)">       
+            </div>
+
+            <h2>Ana Luíza</h2>
+            <div class="mainImagesWrapper" id="anaLu">
+                <img src="belly14.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(14)">
+                <img src="belly15.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(15)">
+                <img src="belly16.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(16)">
+                <img src="belly17.jpg" alt="pregnant woman image" width="215" height="300" onclick="viewBig(17)">
+                <img src="belly18.jpg" alt="pregnant woman image" width="450" height="300" onclick="viewBig(18)">       
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>Copyright &copy; 2022 AlexPhotography</p> 
+             <!-- I used a link creator in order to generate a link to my number. https://whats.link/-->
+            <a href="https://api.whatsapp.com/send?phone=15068975858&text=Hello,%20I%20would%20like%20to%20hire%20you!"><img src="icons/whats.png" class="icons" alt="WhatsApp icon" height="30" width="30"></a>
+            <a href="https://www.instagram.com/ale.ramoscnds/" target="_blank"><img src="icons/insta.png" class="icons" alt="Instagram icon" height="30" width="30"></a>
+            <a href="https://www.facebook.com/alexandre.ramos.71653/" target="_blank"><img src="icons/face.png" class="icons" alt="facebook icon" height="30" width="30"></a>    
+           
+           
+            <a id="emailInformation" href="mailto:fcn_alexandre@hotmail.com">fcn_alexandre@hotmail.com</a>
+        </footer>
+    </body>
+</html>
